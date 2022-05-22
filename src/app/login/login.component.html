@@ -1,0 +1,31 @@
+<div class="login-container">
+    <img class="film" src="assets/movie.png" alt="">
+    <div class="logo">BookMyMovie</div>
+    <div class="desc">
+        Bookmyshow is an entertainment ticketing platform developed by Bigtree Entertainment. Its platform allows users
+        to buy tickets for cinemas, theaters, and sports.The company aims to deliver entertainment experience to
+        customers. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, ex quaerat totam quibusdam deleniti
+        nemo  amet fugit magni voluptatum minus dolorum
+        nihil ab!
+    </div>
+    <div class="login-form">
+
+        <div class="form-group">
+            <label for="username" class="">username</label>
+            <input type="text" class="form-control" id="username" name="uname" [(ngModel)]="username" >
+    
+        </div>
+        <div class="form-group">
+            <label for="inputPassword" class="">Password</label>
+            <input type="password" class="form-control" id="inputPassword" name="pswd" [(ngModel)]="password" >
+    
+        </div>
+        <div class="btn-container">
+            <div class="error"> {{errorMsg}} </div>
+            <button class="btn btn-dark" (click)="login()" >Login</button>
+        </div>
+    
+
+    </div>
+
+</div>
